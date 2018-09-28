@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar target/RisingBandsLandingPage-0.0.1-SNAPSHOT.jar

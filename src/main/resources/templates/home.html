@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:fragment="head">
+<meta charset="UTF-8" />
+<title th:text="'Rising Bands'"></title>
+
+
+<link rel="stylesheet" th:href="@{/css/styles.css}" />
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rising Bands</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+	<header>
+		<h2>
+			<a href="#">Rising Bands</a>
+		</h2>
+		
+		<nav>
+			<li><a href="#">Home</a></li>
+			<li><a href="https://risingbandsapi.herokuapp.com/swagger-ui.html#">Documentation</a></li>			
+		</nav>
+	</header>	
+	
+
+
+	<section class="hero">
+		<div class="background-image"
+			style="background-image: url(/img/hero.jpeg);"></div>
+		<h1>Rising Bands</h1>
+		<h3>Bring music to its highest</h3>
+		<p></p>
+		<div class="card">
+			<a href="https://play.google.com/store"><img class="card-img-top" src="/img/google-play.png"
+				style="width: 170px; height: 60px;" alt="Card image cap">
+				</a>
+		</div>
+		<p></p>
+		<div class="card">
+			<a href="https://www.apple.com/la/ios/app-store/"><img class="card-img-top" src="/img/app-store.png"
+				style="width: 170px; height: 60px;" alt="Card image cap"></a>
+		</div>		
+	</section>
+	
+		
+		
+	
+
+	<section class="our-work">
+		<h3 class="title">Rehearsal without trouble</h3>
+		<p>Easily book the rehearsal studio room you want with all their
+			features without having to call</p>
+		<hr>
+
+		<ul class="grid">
+			<div class="card">
+				<img class="card-img-top" src="/img/moqup-landing.png"
+					style="width: 200px; height: 450px; margin-bottom: 10%;"
+					alt="Card image cap">
+				<p></p>
+			</div>
+			</div>
+	</section>
+
+
+	<section class="features">
+		<h3 class="title">Your business, on your phone</h3>
+		<p>Why use anything else when you can manage your entire
+			weekly-schedule for your music rehearsal rooms from your phone?</p>
+
+		<ul class="grid">
+			<li><div class="card">
+					<img class="card-img-top" src="/img/no-time.jpg"
+						style="width: 300px; height: 200px; margin-bottom: 10%;"
+						alt="Card image cap">
+					<p></p>
+				</div>
+				<p></p>
+				<h4 class="title">No time? No problem!</h4>
+				<h5>We notifiy you everytime a user has booked one of your
+					rehearsal room and we provide you the info if you want to get in
+					touch with them</h5></li>
+			<li><div class="card">
+					<img class="card-img-top" src="/img/sala-ensayo.jpg"
+						style="width: 300px; height: 200px; margin-bottom: 10%;"
+						alt="Card image cap">
+					<p></p>
+				</div>
+				<p></p>
+				<h4 class="title">One place for your rehearsal rooms</h4>
+				<h5>Add your rehearsal music rooms to your profile so you can
+					manage the weekly-schedule and have your information in one place</h5></li>
+			<li>
+				<div class="card">
+					<img class="card-img-top" src="/img/redes-sociales.jpg"
+						style="width: 300px; height: 200px; margin-bottom: 10%;"
+						alt="Card image cap">
+					<p></p>
+				</div>
+				<p></p>
+				<h4 class="title">Your social media sorted</h4>
+				<h5>People who wants to book your music room can look up the
+					social media you attach and see all you want them to know about
+					your branch</h5>
+			</li>
+			</div>
+	</section>
+
+	<section class="our-work">
+		<h3 class="title">An improved band catalog</h3>
+		<p>Find a band that is willing to show their talent and get your
+			local a good presentation as well</p>
+		<hr>
+
+		<ul class="grid">
+			<li class="large" style="background-image: url(img/bar-rock.jpg);"></li>
+			</div>
+	</section>
+
+
+	<section class="reviews">
+		<h3 class="title">What others say:</h3>
+
+		<p class="quote">This app has made my life easier. It helps a lot
+			when you're trying to get to a rehearsal room that is close to your
+			place. I recommend this app for everyone who's trying to find a new
+			place to practice with their band</p>
+		<p class="author">— Charlie Parra del Riego. Leusemia</p>
+
+		<p class="quote">I was using a board to write and post when a band
+			books one of our rooms in order to practice and the people had to
+			call me before and if I couldn't answer the phone it was a lost
+			client for us. With RisingBands, that happens no more. I just have to
+			sit and see how people schedule a room for some hours. This is
+			revolutionary.</p>
+		<p class="author">— George Avitollaes. D'Mozart</p>
+
+		<p class="quote">I used to have some trouble searching for new
+			talented bands that are trying to make some space in the big stage.
+			With this app, I got a lot of options to choose from. Although all
+			the bands are not particularly gifted, there are few ones that I'm
+			interested in hiring for a presentation</p>
+		<p class="author">— Angel Vasquez. Underground Bar</p>
+
+
+	</section>
+
+
+	<section class="contact">
+		<h3 class="title">Unlock your potential</h3>
+		<div class="card">
+			<a href="https://play.google.com/store"><img class="card-img-top" src="/img/google-play.png"
+				style="width: 200px; height: 80px;" alt="Card image cap">
+				</a>
+		</div>
+		<p></p>
+		<div class="card">
+			<a href="https://www.apple.com/la/ios/app-store/"><img class="card-img-top" src="/img/app-store.png"
+				style="width: 200px; height: 80px;" alt="Card image cap"></a>
+		</div>
+		<p></p>
+		<hr>
+	</section>
+
+	<footer>
+		<ul>
+			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-github-square"></i></a></li>
+		</ul>
+	</footer>
+
+</body>
+
+</html>
